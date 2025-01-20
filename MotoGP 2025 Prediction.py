@@ -9,12 +9,6 @@ Original file is located at
 ***Line Up 2024***
 """
 
-! pip install streamlit -q
-
-!wget -q -O - ipv4.icanhazip.com
-
-! streamlit run MotoGP\ 2025\ Prediction.py & npx localtunnel --port 8501
-
 import pandas as pd
 
 df = pd.read_excel('/content/drive/MyDrive/UAS Datamin/dataset motogp 2024.xlsx')
@@ -774,10 +768,6 @@ plt.show()
 
 """# ***2025 MotoGP World Champion Prediction***"""
 
-!pip install fuzzywuzzy
-
-!pip install rapidfuzz
-
 # Import libraries
 import pandas as pd
 from sklearn.model_selection import train_test_split, GridSearchCV
@@ -785,7 +775,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score, classification_report
 import seaborn as sns
 import matplotlib.pyplot as plt
-from rapidfuzz import process
+
 import warnings
 
 # Disable warnings
